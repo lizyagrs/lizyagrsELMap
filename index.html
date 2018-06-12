@@ -11,18 +11,26 @@
 		<link rel="shortcut icon" href="flatui/images/favicon.ico">
 		<!-- 加载leaflet-->
 		<link rel="stylesheet" href="leaflet/leaflet.css" />
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 		<script src="leaflet/leaflet.js"></script>
 		<script src="esri/esri-leaflet.js"></script>
 	</head>
 	<body>
-		<div class="row">
-    			<div id="mapDiv" style="top: 55px; height:800px"></div>
-		 </div>   
+		
+		
+		<nav class="navbar navbar-default navbar-expand-lg" role="navigation">
+			<!-- Navbar content -->
+			<a class="navbar-brand" href="#">Flat UI</a>
+			
+		</nav>
+		<div id="mapDiv" style="height:800px"></div>
+		
 		    <script>
 		      var map = L.map("mapDiv").setView([30.56486,114.353622 ], 10);
 		      //114.353622,30.56486), 5
 		      L.esri.basemapLayer("Topographic").addTo(map);
 		    </script>
+		    
 		    <script src="flatui/js/vendor/jquery.min.js"></script>
 		    <script src="flatui/js/flat-ui.min.js"></script>
 	</body>
